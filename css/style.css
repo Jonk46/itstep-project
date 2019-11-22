@@ -1,0 +1,285 @@
+body {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* MAIN-SLIDER start */
+
+.top-navigation .nav-item {
+  border-top: 1px solid #e1e9f2;
+  border-bottom: 1px solid #e1e9f2;
+}
+
+.top-navigation .nav-link::after {
+  content: '|';
+  color: #e1e9f2;
+  ;
+}
+
+/* Забрати в першого і останнього елемента псевдо елемент */
+
+.link-logo {
+  position: relative;
+  color: #161920;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.link-logo::before {
+  content: url(../img/logo-hosting.png);
+}
+
+.nav-justified .nav-item {
+  flex-basis: auto;
+}
+
+.navbar, .general-menu {
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #ff8261;
+  padding: 0;
+}
+
+.navbar-nav, .general-menu-items {
+  width: 100%;
+}
+
+.general-menu .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.general-menu-items li.nav-item.active, .general-menu-items li.nav-item:hover, li.nav-item:focus {
+  background-color: #52cbf8
+}
+
+.navbar-nav>li>a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.wrapper-carousel {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fc8160;
+  border-radius: 50%;
+  background-color: rgba(209, 217, 239, 0);
+}
+
+.carousel-indicators .active {
+  border-color: #5278db;
+}
+
+/* MAIN-SLIDER end */
+
+/* section SIGN-UP start */
+
+
+
+/* section SIGN-UP end */
+
+/* section OUR-BENEFITS start */
+
+.our-benefits-title {
+  color: #556b72;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.our-benefits-description {
+  color: #a0a9b6;
+  line-height: 26px;
+}
+
+/* section OUR-BENEFITS end */
+
+/* section OUR-HOSTING start */
+
+span.upper-title {
+  position: relative;
+  color: #859aa1;
+  text-transform: uppercase;
+}
+
+.upper-title::before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  width: 21px;
+  height: 2px;
+  background-color: #fb6b45;
+}
+
+.main-title {
+  color: #556b72;
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.internal {
+  border: none;
+}
+
+h5.card-title {
+  position: relative;
+  color: #556b72;
+  font-size: 50px;
+  font-weight: 800;
+  padding-left: 25px;
+}
+
+.card-title::before {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 30px;
+  display: block;
+  content: "\0024";
+  color: #556b72;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.card-text {
+  color: #556b72;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button.btn-hosting {
+  background-color: #52cbf8;
+  border: none;
+  border-radius: 0;
+  width: 185px;
+  height: 40px;
+  font-weight: 800;
+}
+
+.btn-hosting-sign {
+  width: 115px;
+  font-weight: 700;
+  background-color: #ff8261;
+  border: none;
+  border-radius: 0;
+}
+
+/* section OUR-HOSTING end */
+
+/* section OUR-FEATURES start */
+
+.list-group-features .list-group-item {
+  border: none;
+}
+
+.list-group-features .list-group-item::before {
+  content: '/';
+}
+
+.btn-view-all {
+  width: 165px;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: #ff8261;
+  border: none;
+  border-radius: 0;
+}
+
+/* section OUR-FEATURES end */
+
+/* section SIGN-UP-footer start */
+
+section.sign-up, section.sign-up-footer {
+  background-color: #e7f4f8;
+}
+
+.sign-up-form {
+  padding-right: 0;
+}
+
+.btn-hosting-search,
+.btn-sign-up-form {
+  width: 115px;
+  height: 47px;
+  font-weight: 700;
+  background-color: #ff8261;
+  border: none;
+  border-radius: 0;
+}
+
+.sign-up-form input.form-control-lg {
+  border-radius: 0;
+}
+
+/* section SIGN-UP end */
+
+/* section FOOTER start */
+
+footer.page-footer {
+  background-color: #4c515b;
+}
+
+.footer-logo {
+  padding-right: 0;
+  text-align: right;
+}
+
+.footer-logo-heading {
+  text-transform: uppercase;
+  color: #e7f4f8;
+  font-weight: 800;
+}
+
+.footer-logo-subheading {
+  color: #8892a4;
+}
+
+i.fab {
+  font-family: "FontAwesome";
+  color: rgb(144, 154, 173);
+  padding-right: 25px;
+}
+
+i.fab:hover {
+  color: #e7f4f8;
+}
+
+h5.footer-title {
+  color: #ffffff;
+}
+
+.page-footer a {
+  color: #8892a4;
+  text-decoration: none;
+}
+
+.page-footer a:hover {
+  color: #ffffff;
+}
+
+address strong {
+  color: #e7f4f8;
+}
+
+/* section FOOTER end */
