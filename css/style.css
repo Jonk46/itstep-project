@@ -89,7 +89,15 @@ img {
 
 /* section SIGN-UP start */
 
+.sign-up input, .sign-up select, .sign-up-form input {
+  font-size: 14px;
+  height: calc(2.5em + 1rem + 2px);
+  border: 1px solid #dfeef3;
+}
 
+.sign-up input, .sign-up select, .sign-up-form input {
+  border-radius: 0;
+}
 
 /* section SIGN-UP end */
 
@@ -218,10 +226,16 @@ section.sign-up, section.sign-up-footer {
   padding-right: 0;
 }
 
-.btn-hosting-search,
+.btn-hosting-search {
+  width: 100%;
+}
+
 .btn-sign-up-form {
   width: 115px;
-  height: 47px;
+}
+
+.btn-hosting-search, .btn-sign-up-form {
+  height: 53px;
   font-weight: 700;
   background-color: #ff8261;
   border: none;

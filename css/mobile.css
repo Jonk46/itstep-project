@@ -1,8 +1,12 @@
 @media (min-width: 1200px) {}
 
 @media (max-width: 991px) {
-  .page-footer {
+  .page-footer, .footer-logo {
     text-align: center;
+    padding-bottom: 10px;
+  }
+  .page-footer i.fab {
+    padding: 0 20px;
   }
 }
 
