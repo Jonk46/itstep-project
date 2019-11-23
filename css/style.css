@@ -12,6 +12,15 @@ img {
 
 /* MAIN-SLIDER start */
 
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.top-navigation .nav-link {
+  padding: 10px 0;
+}
+
 .top-navigation .nav-item {
   border-top: 1px solid #e1e9f2;
   border-bottom: 1px solid #e1e9f2;
@@ -20,8 +29,21 @@ img {
 .top-navigation .nav-link::after {
   content: '|';
   color: #e1e9f2;
-  ;
+  margin: 0 15px;
 }
+
+
+
+.top-navigation .nav-link:last-child:after {
+  content: "";
+}
+  
+/* .top-navigation .nav-link:not(:last-child) {
+	content: "";
+	margin: 0px;
+} */
+
+
 
 /* Забрати в першого і останнього елемента псевдо елемент */
 
@@ -197,12 +219,19 @@ button.btn-hosting {
 
 /* section OUR-FEATURES start */
 
+.list-group-item {
+  padding: .75rem 0.25rem;
+}
+
 .list-group-features .list-group-item {
   border: none;
 }
 
 .list-group-features .list-group-item::before {
-  content: '/';
+  content: "\f105";
+  font-family: "FontAwesome";
+  color: #4c515b;
+  padding-right: 10px;
 }
 
 .btn-view-all {
